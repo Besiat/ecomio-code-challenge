@@ -12,6 +12,7 @@
     "noEmitOnError": false,
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "typeRoots": ["src/types", "node_modules/@types"]
+    "typeRoots": ["src/types", "node_modules/@types"],
+    "baseUrl": "."
   }
 }

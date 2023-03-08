@@ -4,11 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const srcDir = path.join(__dirname, '..', 'src');
 
 module.exports = {
-  entry: [
-    path.join(srcDir, 'main.ts'),
-    path.join(srcDir, '/assets/sass/common.scss'),
-
-  ],
+  entry: [path.join(srcDir, 'main.ts'), path.join(srcDir, '/assets/sass/common.scss')],
   output: {
     publicPath: '',
     path: path.join(__dirname, '../dist/js'),
@@ -45,6 +41,7 @@ module.exports = {
       patterns: [
         { from: 'public', to: '../' },
         { from: 'icons/*', to: '../images', context: 'src/assets/images/' },
+        { from: 'app/*', to: '../images', context: 'src/assets/images/' },
       ],
       options: {},
     }),
