@@ -20,6 +20,7 @@
     "watch": "webpack --config webpack/webpack.dev.js --watch"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.219",
     "copy-webpack-plugin": "^11.0.0",
     "file-loader": "^6.2.0",
     "jest-puppeteer": "^7.0.0",
